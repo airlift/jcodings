@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.airlift</groupId>
-  <artifactId>jcodings</artifactId>
+  <artifactId>jcodings-internal</artifactId>
   <version>1.0.12.1-SNAPSHOT</version>
   <name>JCodings</name>
   <description>
@@ -98,29 +98,6 @@
       <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.6</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.3</version>
-        <configuration>
-          <createDependencyReducedPom>false</createDependencyReducedPom>
-          <createSourcesJar>true</createSourcesJar>
-          <shadeSourcesContent>true</shadeSourcesContent>
-          <relocations>
-            <relocation>
-              <pattern>org.jcodings</pattern>
-              <shadedPattern>io.airlift.jcodings</shadedPattern>
-            </relocation>
-          </relocations>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
     <pluginManagement>
