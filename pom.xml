@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.airlift</groupId>
   <artifactId>jcodings-internal</artifactId>
-  <version>1.0.12.1-SNAPSHOT</version>
+  <version>1.0.12.1</version>
   <name>JCodings</name>
   <description>
     Byte based encoding support library for java
@@ -19,6 +19,7 @@
     <connection>scm:git:git://github.com/airlift/jcodings.git</connection>
     <developerConnection>scm:git:git://github.com/airlift/jcodings.git</developerConnection>
     <url>https://github.com/airlift/jcodings</url>
+    <tag>1.0.12.1</tag>
   </scm>
 
   <licenses>
